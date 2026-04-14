@@ -5,110 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USM events</title>
     <link href="./css/tailwindcss.css" rel="stylesheet">
-
 </head>
-<!-- convencion: caracterisitca,  color, medida responsive -->
-<body class="flex flex-col font-sans bg-gray-300 text-gray-800 min-h-screen">
-    <!-- navbar -->
-    <nav class="flex flex-nowrap justify-around items-center bg-white top-0 sticky w-full px-8 py-2 z-50">
-        <div class="font-bold text-blue-700 text-xl">USM</div>
-        <div class="text-gray-600 hidden md:flex gap-6 font-medium">
+<body class="flex flex-col min-h-screen font-sans bg-gray-300 text-gray-800">
+    
+    <nav class="flex flex-nowrap justify-around items-center top-0 sticky w-full px-10 py-2 z-50 bg-white">
+        <div class="font-bold text-xl text-blue-700">USM</div>
+        <div class="hidden gap-6 font-medium text-gray-600 md:flex">
             <a href="#" class="hover:text-blue-600">Principal</a>
             <a href="#" class="hover:text-blue-600">Calendario</a>
             <a href="#" class="hover:text-blue-600">Comunidad</a>
-
-
-
-            
-            
         </div>
-        
     </nav>
+    
     <main class="flex-1 w-full max-w-7xl mx-auto p-6">
 
-        <!-- Hero -->
-        <section class="flex flex-col bg-blue-900 text-white rounded-2xl p-8 mb-12 md:flex-row gap-8 shadow-lg">
+        <section class="flex flex-col rounded-2xl p-8 mb-12 gap-8 shadow-lg bg-blue-900 text-white md:flex-row">
             <div class="flex-1 space-y-4">
-                <h1 class="font-bold rounded-xl text-6xl text-white py-3 space-y-4">Proximo gran evento: <span class="text-blue-400"> Curabitur tristique</span></h1>
+                <h1 class="font-bold rounded-xl text-6xl py-3 space-y-4 text-white">Proximo gran evento: <span class="text-blue-400"> Curabitur tristique</span></h1>
                 <p>
                     Phasellus eu nisi dui. Suspendisse potenti. Fusce imperdiet gravida purus. Curabitur at fermentum purus. Vivamus sed purus sodales, eleifend eros a, bibendum dui. Duis maximus massa sem, a varius enim finibus quis. Nunc ullamcorper, arcu eu venenatis mattis, ante urna dignissim quam, vitae ultricies dui ex facilisis lectus.  
                 </p>
                 <div class="flex gap-4 pt-4">
-                    <a href="#" class="bg-yellow-500 text-blue-900 px-6 py-3 rounded-full font-bold shadow-lg hover:bg-yellow-400 hover:-translate-y-1 transition-all">
+                    <a href="#" class="px-6 py-3 rounded-full font-bold shadow-lg transition-all hover:-translate-y-1 bg-yellow-500 text-blue-900 hover:bg-yellow-400">
                         Reservar Cupo
                     </a>
-                    <a href="#" class="border border-white/30 text-white px-6 py-3 rounded-full font-bold hover:bg-white/20 hover:-translate-y-1 transition-all">
+                    <a href="#" class="border px-6 py-3 rounded-full font-bold transition-all hover:-translate-y-1 border-white/30 text-white hover:bg-white/20">
                         Ver Detalles
                     </a>
                 </div>
             </div>
             
-            <div class="flex flex-1 items-center justify-center border rounded-xl bg-blue-800 border-blue-700 text-blue-300 h-48">
+            <div class="flex flex-1 items-center justify-center border rounded-xl bg-blue-800 border-blue-700 text-blue-300 h-12 w-auto">
                 [imagen]
             </div>
         </section>
 
-
-
-
-        <!-- carrusel de eventos -->
-        <!-- header  -->
         <section class="mb-12">
             <div class="flex flex-row justify-between items-end">
-                <h2 class="font-bold text-xl text-blue-800 ">Proximos eventos</h2>
-                <a href="#" class="hover:underline font-semibold text-blue-700">Calendario</a>
+                <h2 class="font-bold text-xl text-blue-800">Proximos eventos</h2>
+                <a href="#" class="font-semibold hover:underline text-blue-700">Calendario</a>
             </div>
 
-
-            <!-- cartas  -->
-            <div class="grid grid-rows-1 md:grid-cols-3 gap-6">
-                <div class="shadow-sm rounded-xl border overflow-hidden bg-white border-gray-400 "> 
-                    <div class="flex items-center justify-center bg-gray-200 text-gray-500 h-32">[Imagen]</div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+                <div class="shadow-sm rounded-xl border overflow-hidden bg-white border-gray-400"> 
+                    <div class="flex items-center justify-center h-32 bg-gray-200 text-gray-500">[Imagen]</div>
                     <div class="p-4 space-y-2">
                         <span class="text-xs font-bold text-yellow-600">Fusce turpis metus</span>
-                        <h3 class="font-bold text-blue-900"> Accumsan</h3>
+                        <h3 class="font-bold text-blue-900">Accumsan</h3>
                         <p class="text-sm text-gray-600">
                             Aliquam gravida mattis ipsum, ut mattis ipsum iaculis eu. Integer eleifend, massa cursus varius gravida, sem nulla scelerisque dui, nec tempus felis velit et elit. Ut facilisis consequat arcu, ac feugiat lacus fringilla accumsan. In rutrum felis a lacus pharetra sodales vehicula a tellus. Integer ligula felis, interdum in pellentesque ut, rutrum in ante. Etiam porta scelerisque ligula at tempor.
                         </p>
                     </div>
                 </div>
-                <div class="shadow-sm rounded-xl border overflow-hidden bg-white border-gray-400 ">
-                    <div class="flex items-center justify-center bg-gray-200 text-gray-500 h-32">[Imagen]</div>
+                <div class="shadow-sm rounded-xl border overflow-hidden bg-white border-gray-400">
+                    <div class="flex items-center justify-center h-32 bg-gray-200 text-gray-500">[Imagen]</div>
                     <div class="p-4 space-y-2">
                         <span class="text-xs font-bold text-yellow-600">Quisque</span>
-                        <h3 class="font-bold text-blue-900"> libero</h3>
+                        <h3 class="font-bold text-blue-900">libero</h3>
                         <p class="text-sm text-gray-600">
                             Sed lorem elit, tristique in tellus eleifend, cursus porta sapien. Pellentesque interdum sit amet nunc sit amet scelerisque. Suspendisse bibendum ultricies fringilla.
                         </p>
                     </div>
-            
                 </div>
-                <div class="shadow-sm rounded-xl border overflow-hidden bg-white border-gray-400 "> 
-                    <div class="flex items-center justify-center bg-gray-200 text-gray-500 h-32">[Imagen]</div>
+                <div class="shadow-sm rounded-xl border overflow-hidden bg-white border-gray-400"> 
+                    <div class="flex items-center justify-center h-32 bg-gray-200 text-gray-500">[Imagen]</div>
                     <div class="p-4 space-y-2">
                         <span class="text-xs font-bold text-yellow-600">Integer blandit ligula eu convallis tempus</span>
-                        <h3 class="font-bold text-blue-900"> Phasellus eu</h3>
+                        <h3 class="font-bold text-blue-900">Phasellus eu</h3>
                         <p class="text-sm text-gray-600">
                            Fusce velit urna, fermentum non nibh id, egestas aliquam neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum interdum sapien eu commodo. Nulla sit amet egestas elit. Pellentesque cursus mauris risus, quis finibus ligula varius a. Fusce elementum quis velit nec rutrum. Donec rhoncus dignissim arcu ultrices euismod
                         </p>
                     </div>
-                    
                 </div>
-
             </div>
         </section>
     </main>
-    
-    <footer class="mt-auto bg-blue-800 text-gray-100 py-6 px-4">
-        <div class="flex flex-col max-w-5xl mx-auto md:flex-row justify-between items-center text-sm">
-            <p>USM Events</p>
-            <div class="flex mt-4 md:mt-0 gap-4">
-                <a href="#" class="hover:text-gray-600">Cras</a>
-                <a href="#" class="hover:text-gray-600">ex</a>
+    <section class="mt-10 mb-12 px-10 md:px-4">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold text-blue-900">Comentarios Destacados</h2>
+            <p class="mt-2 text-gray-600">Lo que dicen nuestros asistentes</p>
+        </div>
+        
+        <div class="grid grid-cols-1 justify-evenly gap-6 px-7 md:grid-cols-3">
+            
+            <div class="rounded-xl shadow-sm border p-6 bg-white border-gray-200">
+                <div class="text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                <p class="italic mb-6 text-gray-600">"Vestibulum vitae ultricies quam, id lacinia lacus. Quisque vel feugiat erat. Pellentesque viverra erat sodales rhoncus sollicitudin. Vivamus mi ligula, auctor at laoreet iaculis, congue et orci."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gray-300"></div>
+                    <div>
+                        <h4 class="text-sm font-bold text-blue-900">Camila Fuentes</h4>
+                        <p class="text-xs text-gray-500">Estudiante de Ingeniería</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rounded-xl shadow-sm border p-6 bg-white border-gray-200">
+                <div class="text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                <p class="italic mb-6 text-gray-600">"Un orgullo participar. La Gala de Ingeniería fue impecable, desde la producción hasta el contenido entregado."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gray-300"></div>
+                    <div>
+                        <h4 class="text-sm font-bold text-blue-900">Dr. Jorge Morales</h4>
+                        <p class="text-xs text-gray-500">Docente Universitario</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rounded-xl shadow-sm border p-6 bg-white border-gray-200">
+                <div class="text-xl mb-3">⭐⭐⭐⭐</div>
+                <p class="italic mb-6 text-gray-600">"La calidad del streaming subió de nivel. Pude ver la charla técnica desde otra región sin ningún retraso."</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gray-300"></div>
+                    <div>
+                        <h4 class="text-sm font-bold text-blue-900">Rodrigo Valenzuela</h4>
+                        <p class="text-xs text-gray-500">Exalumno</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="mt-auto py-6 px-4 bg-blue-800 text-gray-100">
+        <div class="flex flex-col justify-between items-center max-w-5xl mx-auto text-sm md:flex-row">
+            <img src="./img/logo.png" 
+             alt="Logo USM" 
+             class="hidden md:block  object-contain my-4 md:my-1 h-12 w-auto">
+            <p>Camio Pérez Osorio</p>
+            <p>Ingenieria en informatica</p>
+            <p>Taller de programación</p>
+            <div class="flex mt-4 gap-4 md:mt-0">
+                <a href="#" class="hover:text-gray-600">X</a>
+                <a href="#" class="hover:text-gray-600">Política de Privacidad</a>
             </div>
         </div>
     </footer>
-    
     
 </body>
 </html>
