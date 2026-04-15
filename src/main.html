@@ -6,22 +6,22 @@
     <title>USM events</title>
     <link href="./css/tailwindcss.css" rel="stylesheet">
 </head>
-<body class="flex flex-col min-h-screen font-sans bg-blue-50 text-gray-800">
-    
+<body class="flex flex-col font-sans bg-blue-50 text-gray-800 min-h-screen">
+    <!-- navbar -->
     <nav class="flex flex-nowrap justify-around items-center top-0 sticky w-full px-10 py-2 z-50 bg-white">
-        <div class="font-bold text-xl text-blue-700">USM</div>
+        <h1 class="font-black text-blue-900 tracking-tight text-xl ">USM Events</h1>
         <div class="hidden gap-6 font-medium text-gray-600 md:flex">
-            <a href="#" class="hover:text-blue-600">Principal</a>
+            <a href="#" class="pb-1 font-bold border-b-2 transition-colors text-blue-900 border-yellow-500">Principal</a>
             <a href="#" class="hover:text-blue-600">Calendario</a>
             <a href="#" class="hover:text-blue-600">Comunidad</a>
         </div>
     </nav>
-    
+    <!-- hero/seccion principal -->
     <main class="flex-1 w-full max-w-7xl mx-auto p-6">
 
         <section class="flex flex-col rounded-2xl p-8 mb-12 gap-8 shadow-lg bg-blue-900 text-white md:flex-row">
             <div class="flex-1 space-y-4">
-                <h1 class="font-bold rounded-xl text-6xl py-3 space-y-4 text-white">Proximo gran evento: <span class="text-blue-400"> Curabitur tristique</span></h1>
+                <h1 class="font-bold rounded-xl text-4xl md:text-6xl text-white py-3 space-y-4">Proximo gran evento: <span class="text-blue-400"> Curabitur tristique</span></h1>
                 <p>
                     Phasellus eu nisi dui. Suspendisse potenti. Fusce imperdiet gravida purus. Curabitur at fermentum purus. Vivamus sed purus sodales, eleifend eros a, bibendum dui. Duis maximus massa sem, a varius enim finibus quis. Nunc ullamcorper, arcu eu venenatis mattis, ante urna dignissim quam, vitae ultricies dui ex facilisis lectus.  
                 </p>
@@ -39,7 +39,7 @@
                 [imagen]
             </div>
         </section>
-
+        <!-- eventos destacados proximos -->
         <section class="mb-12">
             <div class="flex flex-row justify-between items-end">
                 <h2 class="font-bold text-xl text-blue-800">Proximos eventos</h2>
@@ -80,6 +80,7 @@
             </div>
         </section>
     </main>
+    <!-- comentarios destacados -->
     <section class="mt-10 mb-12 px-10 md:px-4">
         <div class="text-center mb-10">
             <h2 class="text-3xl font-extrabold text-blue-900">Comentarios Destacados</h2>
@@ -133,7 +134,7 @@
         <div class="flex flex-col justify-between items-center max-w-5xl mx-auto text-sm md:flex-row">
             <img src="./img/logo.png" 
              alt="Logo USM" 
-             class="hidden md:block bg-gray-100 rounded-xl object-contain my-4 md:my-1 h-14 w-auto p-4">
+             class="hidden md:block rounded-xl object-contain bg-yellow-500 my-4 md:my-1 h-14 w-auto p-4">
             <div class="flex flex-row mt-4 gap-4 md:mt-0">
                 <p>Camilo Pérez Osorio</p>
                 <p>Ingeniería en Informática</p>

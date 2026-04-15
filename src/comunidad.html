@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Comunidad USM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0..1&display=swap" rel="stylesheet"/>
+</head>
+
+
+<body class="flex flex-col font-sans bg-blue-50 text-gray-800 min-h-screen">
+    <!-- navbar -->
+    <nav class="flex flex-nowrap justify-around items-center top-0 sticky w-full px-10 py-2 z-50 bg-white">
+        <h1 class="font-black text-blue-900 tracking-tight text-xl">USM Events</h1>
+        <div class="hidden gap-6 font-medium text-gray-600 md:flex">
+            <a href="#" class="hover:text-blue-600">Principal</a>
+            <a href="#" class="hover:text-blue-600">Calendario</a>
+            <a href="#" class="pb-1 font-bold border-b-2 transition-colors text-blue-900 border-yellow-500">Comunidad</a>
+        </div>
+    </nav>
+
+    <main class="flex-box w-full max-w-7xl mx-auto px-6 pt-12 pb-20"> 
+
+        <!-- hero -->
+        <section class="flex flex-col justify-between items-center rounded-3xl shadow-lg bg-blue-900 p-8 md:p-12 lg:p-16 mb-16 md:flex-row">
+            <div class="max-w-xl">
+                <span class="inline-flex font-bold text-xs rounded-full items-center shadow-md bg-yellow-500 text-blue-900 px-3 py-2 mb-4">
+                    Comunidad USM
+                </span>
+                <h2 class="font-extrabold text-4xl md:text-6xl text-white mb-6">
+                    Conecta con la <span class="text-yellow-500">Comunidad</span>
+                </h2>
+                <p class=" text-lg leading-relaxed text-blue-100 mb-8 md:text-xl">
+                   Donec eleifend ante eu nisi tempus, vel pulvinar massa convallis. Sed sit amet mi vitae turpis molestie imperdiet. Curabitur sed posuere nisl. Mauris risus lectus, auctor vitae lacus sit amet, molestie scelerisque est. Quisque libero tellus, blandit at tortor vel, luctus tincidunt dolor. Integer a porttitor justo. Donec vel quam tincidunt lectus tempus tristique. Nullam pharetra tincidunt arcu vitae semper.
+                </p>
+                <button class="font-bold rounded-full shadow-lg transition-all active:scale-95 bg-gray-200 text-blue-900 px-8 py-3 hover:bg-gray-100 hover:shadow-xl hover:-translate-y-1">
+                    Iniciar Discusión
+                </button>
+                
+            </div>
+            <div class="flex flex-1 justify-center items-center  border rounded-xl bg-blue-800 border-blue-700 text-blue-300 h-48 w-auto">
+                [imagen]
+            </div>
+        </section>
+        <!-- comentarios recientes -->
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+    
+            <div class="space-y-6 lg:col-span-9">
+                <!-- cabeza de seccion -->
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="font-bold text-2xl text-blue-900">Conversaciones Recientes</h3>
+                    <button class="p-2 rounded-lg transition-colors bg-gray-100 text-gray-600 hover:bg-gray-200">
+                        <span class="material-symbols-outlined">filter_list</span>
+                    </button>
+                </div>
+                <!-- chat de comentarios -->
+                 <!-- comentario de ejemplo -->
+                <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
+                    <div>
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-xs">
+                            [IMG]
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
+                            <h4 class="font-bold text-blue-900">Andrés Morales</h4>
+                            <time class="text-xs text-gray-500">Hoy</time>
+                        </div>
+                        <p class="leading-relaxed text-gray-600">Phasellus dapibus, mauris nec sollicitudin ultrices, leo velit suscipit sapien, et venenatis nisi dolor finibus sapien. Cras volutpat sem et quam feugiat ullamcorper.</p>
+                        <div class="flex gap-4 mt-4">
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700">
+                                <span class="text-sm material-symbols-outlined">thumb_up</span> 12
+                            </button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700">
+                                <span class="text-sm material-symbols-outlined">reply</span> Responder
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
+                    <div class="flex-shrink-0">
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-xs">
+                            [IMG]
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
+                            <h4 class="font-bold text-blue-900">Juan Pérez</h4>
+                            <time class="text-xs text-gray-500">Hoy</time>
+                        </div>
+                        <p class="leading-relaxed text-gray-600">Fusce elementum imperdiet velit, vel pellentesque purus pretium id. Vestibulum fringilla lacinia convallis. Cras tristique odio ante, viverra laoreet libero volutpat ac. Vivamus egestas facilisis aliquet. Cras malesuada finibus fermentum.</p>
+                        <div class="flex gap-4 mt-4">
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700">
+                                <span class="text-sm material-symbols-outlined">thumb_up</span> 12
+                            </button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700">
+                                <span class="text-sm material-symbols-outlined">reply</span> Responder
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <div class="py-8 text-center">
+                    <button class="flex items-center gap-2 mx-auto font-bold transition-colors text-blue-900 hover:text-blue-500">
+                        Cargar más comentarios <span class="material-symbols-outlined">expand_more</span>
+                    </button>
+                </div>
+            </div> 
+
+            <!-- Filtrador por temas populares -->
+            <aside class="hidden space-y-6 lg:block lg:col-span-3">
+                <div class="rounded-2xl border shadow-sm bg-white border-gray-200 p-6">
+                    <h3 class="mb-4 font-bold text-blue-900">Temas Populares</h3>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between items-center text-sm cursor-pointer group">
+                            <span class="transition-colors text-gray-600 group-hover:text-blue-700">#GalaIngeniería</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm cursor-pointer group">
+                            <span class="transition-colors text-gray-600 group-hover:text-blue-700">#InnovaciónUSM</span>
+                        </li>
+                        <li class="flex justify-between items-center text-sm cursor-pointer group">
+                            <span class="transition-colors text-gray-600 group-hover:text-blue-700">#FeriaEmpleos</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        
+        
+
+        
+        
+
+    </main>
+         
+    
+
+    <footer class="px-4 py-6 mt-auto pb-24 bg-blue-800 text-gray-100 md:pb-6">
+        <div class="flex flex-col justify-between items-center max-w-5xl mx-auto text-sm md:flex-row">
+            <img src="./img/logo.png" alt="Logo USM" class="hidden object-contain p-4 my-4 w-auto h-14 rounded-xl bg-yellow-500 md:block md:my-1">
+            <div class="flex flex-row mt-4 gap-4 md:mt-0">
+                <p>Camilo Pérez Osorio</p>
+                <p>Ingeniería en Informática</p>
+                <p>Taller de programación</p>
+            </div>
+            
+        </div>
+    </footer>  
+</body>
+</html>
+    
