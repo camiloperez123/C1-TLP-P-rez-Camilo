@@ -11,13 +11,29 @@
 
 <body class="flex flex-col font-sans bg-blue-50 text-gray-800 min-h-screen">
     <!-- navbar -->
-    <nav class="flex flex-nowrap justify-around items-center top-0 sticky w-full px-10 py-2 z-50 bg-white">
-        <h1 class="font-black text-blue-900 tracking-tight text-xl ">USM Events</h1>
+    <header class="flex justify-center md:justify-around items-center top-0 sticky w-full px-10 py-3 z-50 bg-white shadow-sm">
+        <h1 class="font-black text-blue-900 tracking-tight text-xl">USM Events</h1>
+        
         <div class="hidden gap-6 font-medium text-gray-600 md:flex">
-            <a href="main.html" class=" font-bold border-b-2 transition-colors text-blue-900 border-yellow-500 pb-1">Principal</a>
-            <a href="calendario.html" class="hover:text-blue-600">Calendario</a>
-            <a href="comunidad.html" class="hover:text-blue-600">Comunidad</a>
+            <a href="main.html" class="hover:text-blue-600 transition-colors">Principal</a>
+            <a href="calendario.html" class="hover:text-blue-600 transition-colors">Calendario</a>
+            <a href="comunidad.html" class="font-bold border-b-2 transition-colors text-blue-900 border-yellow-500 pb-1">Comunidad</a>
         </div>
+    </header>
+
+    <nav class="md:hidden fixed bottom-0 w-full bg-white border-t border-gray-200 z-50 flex justify-around py-3">
+        <a href="main.html" class="text-gray-500 hover:text-blue-600 flex flex-col items-center text-xs">
+            <span class="material-symbols-outlined">home</span>
+            Principal
+        </a>
+        <a href="calendario.html" class="text-gray-500 hover:text-blue-600 flex flex-col items-center text-xs">
+            <span class="material-symbols-outlined">event</span>
+            Calendario
+        </a>
+        <a href="comunidad.html" class="text-blue-900 font-bold flex flex-col items-center text-xs">
+            <span class="material-symbols-outlined">forum</span>
+            Comunidad
+        </a>
     </nav>
 
     <main class="flex-box w-full max-w-7xl mx-auto px-6 pt-12 pb-20"> 
@@ -56,7 +72,7 @@
                     </button>
                 </div>
                 <!-- chat de comentarios -->
-                 <!-- comentario de ejemplo -->
+                 <!-- comentarios de ejemplo -->
                 <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
                     <div class="flex-shrink-0">
                         <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">AM</div>

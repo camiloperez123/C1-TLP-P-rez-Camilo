@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario de eventos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./css/tailwindcss.css" rel="stylesheet">
+    <!-- me paso algo raro con mi .css y tuve que d descargar tailwind a traves de internet, por eso se ve raro el commit, no me funciona sin la version de internet, pero dejo como se debe usar, quiza y les funcione a ustedes. -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0..1&display=swap" rel="stylesheet"/>
 </head>
 <body class="flex flex-col min-h-screen font-sans bg-blue-50 text-gray-800 ">
     <!-- navbar -->
-    <nav class="flex flex-nowrap justify-around items-center top-0 sticky w-full px-10 py-2 z-50 bg-white">
-        <h1 class="font-black text-blue-900 tracking-tight text-xl ">USM Events</h1>
+    <header class="flex justify-center md:justify-around items-center top-0 sticky w-full px-10 py-3 z-50 bg-white shadow-sm">
+        <h1 class="font-black text-blue-900 tracking-tight text-xl">USM Events</h1>
+        
         <div class="hidden gap-6 font-medium text-gray-600 md:flex">
-            <a href="main.html" class=" font-bold border-b-2 transition-colors text-blue-900 border-yellow-500 pb-1">Principal</a>
-            <a href="calendario.html" class="hover:text-blue-600">Calendario</a>
-            <a href="comunidad.html" class="hover:text-blue-600">Comunidad</a>
+            <a href="main.html" class="hover:text-blue-600 transition-colors">Principal</a>
+            <a href="calendario.html" class="font-bold border-b-2 transition-colors text-blue-900 border-yellow-500 pb-1">Calendario</a>
+            <a href="comunidad.html" class="hover:text-blue-600 transition-colors">Comunidad</a>
         </div>
+    </header>
+
+    <nav class="md:hidden fixed bottom-0 w-full bg-white border-t border-gray-200 z-50 flex justify-around py-3">
+        <a href="main.html" class="text-gray-500 hover:text-blue-600 flex flex-col items-center text-xs">
+            <span class="material-symbols-outlined">home</span>
+            Principal
+        </a>
+        <a href="calendario.html" class="text-blue-900 font-bold flex flex-col items-center text-xs">
+            <span class="material-symbols-outlined">event</span>
+            Calendario
+        </a>
+        <a href="comunidad.html" class="text-gray-500 hover:text-blue-600 flex flex-col items-center text-xs">
+            <span class="material-symbols-outlined">forum</span>
+            Comunidad
+        </a>
     </nav>
     <main class="flex-1 w-full max-w-7xl mx-auto p-6">
         <!-- hero -->

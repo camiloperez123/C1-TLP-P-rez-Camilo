@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USM events</title>
     <link href="./css/tailwindcss.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0..1&display=swap" rel="stylesheet"/>
 </head>
 <body class="flex flex-col font-sans bg-blue-50 text-gray-800 min-h-screen">
     <!-- navbar -->
-    <nav class="flex flex-nowrap justify-around items-center top-0 sticky w-full px-10 py-2 z-50 bg-white">
-        <h1 class="font-black text-blue-900 tracking-tight text-xl ">USM Events</h1>
-        <div class="hidden gap-6 font-medium text-gray-600 md:flex">
-            <a href="main.html" class=" font-bold border-b-2 transition-colors text-blue-900 border-yellow-500 pb-1">Principal</a>
-            <a href="calendario.html" class="hover:text-blue-600">Calendario</a>
-            <a href="comunidad.html" class="hover:text-blue-600">Comunidad</a>
+    <header class="flex justify-between items-center top-0 sticky w-full px-10 py-4 z-50 bg-white shadow-sm">
+        
+        <h1 class="font-black text-blue-900 tracking-tight text-xl">USM Events</h1>
+        
+        <div class="hidden gap-8 font-medium text-gray-600 md:flex">
+            <a href="main.html" class="font-bold border-b-2 transition-colors text-blue-900 border-yellow-500 pb-1">Principal</a>
+            <a href="calendario.html" class="hover:text-blue-600 transition-colors">Calendario</a>
+            <a href="comunidad.html" class="hover:text-blue-600 transition-colors">Comunidad</a>
         </div>
+    </header>
+
+    <nav class="md:hidden fixed bottom-0 w-full bg-white border-t border-gray-200 z-50 flex justify-around py-3">
+        <a href="main.html" class="text-blue-900 font-bold flex flex-col items-center text-xs">
+            <span class="material-symbols-outlined">home</span>
+            Principal
+        </a>
+        <a href="calendario.html" class="text-gray-500 hover:text-blue-600 flex flex-col items-center text-xs">
+            <span class="material-symbols-outlined">event</span>
+            Calendario
+        </a>
+        <a href="comunidad.html" class="text-gray-500 hover:text-blue-600 flex flex-col items-center text-xs">
+            <span class="material-symbols-outlined">forum</span>
+            Comunidad
+        </a>
     </nav>
     <!-- hero/seccion principal -->
     <main class="flex-1 w-full max-w-7xl mx-auto p-6">
@@ -35,7 +53,7 @@
                 </div>
             </div>
             
-            <div class="flex flex-1 items-center justify-center border rounded-xl bg-blue-800 border-blue-700 text-blue-300 h-12 ">
+            <div class="flex flex-1 justify-center items-center  border rounded-xl bg-blue-800 border-blue-700 text-blue-300 h-48 w-auto">
                 [imagen]
             </div>
         </section>
