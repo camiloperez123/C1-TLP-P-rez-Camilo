@@ -14,9 +14,9 @@
     <nav class="flex flex-nowrap justify-around items-center top-0 sticky w-full px-10 py-2 z-50 bg-white">
         <h1 class="font-black text-blue-900 tracking-tight text-xl ">USM Events</h1>
         <div class="hidden gap-6 font-medium text-gray-600 md:flex">
-            <a href="src/main.html" class=" font-bold border-b-2 transition-colors text-blue-900 border-yellow-500 pb-1">Principal</a>
-            <a href="src/calendario.html" class="hover:text-blue-600">Calendario</a>
-            <a href="src/comunidad.html" class="hover:text-blue-600">Comunidad</a>
+            <a href="main.html" class=" font-bold border-b-2 transition-colors text-blue-900 border-yellow-500 pb-1">Principal</a>
+            <a href="calendario.html" class="hover:text-blue-600">Calendario</a>
+            <a href="comunidad.html" class="hover:text-blue-600">Comunidad</a>
         </div>
     </nav>
 
@@ -48,6 +48,7 @@
     
             <div class="space-y-6 lg:col-span-9">
                 <!-- cabeza de seccion -->
+                
                 <div class="flex justify-between items-center mb-8">
                     <h3 class="font-bold text-2xl text-blue-900">Conversaciones Recientes</h3>
                     <button class="p-2 rounded-lg transition-colors bg-gray-100 text-gray-600 hover:bg-gray-200">
@@ -57,55 +58,181 @@
                 <!-- chat de comentarios -->
                  <!-- comentario de ejemplo -->
                 <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
-                    <div>
-                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-xs">
-                            [IMG]
-                        </div>
+                    <div class="flex-shrink-0">
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">AM</div>
                     </div>
                     <div class="flex-grow">
                         <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
                             <h4 class="font-bold text-blue-900">Andrés Morales</h4>
                             <time class="text-xs text-gray-500">Hoy</time>
                         </div>
-                        <p class="leading-relaxed text-gray-600">Phasellus dapibus, mauris nec sollicitudin ultrices, leo velit suscipit sapien, et venenatis nisi dolor finibus sapien. Cras volutpat sem et quam feugiat ullamcorper.</p>
+                        <p class="leading-relaxed text-gray-600">Phasellus dapibus, mauris nec sollicitudin ultrices, leo velit suscipit sapien, et venenatis nisi dolor finibus sapien.</p>
                         <div class="flex gap-4 mt-4">
-                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700">
-                                <span class="text-sm material-symbols-outlined">thumb_up</span> 12
-                            </button>
-                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700">
-                                <span class="text-sm material-symbols-outlined">reply</span> Responder
-                            </button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">thumb_up</span> 12</button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">reply</span> Responder</button>
                         </div>
                     </div>
                 </article>
+
                 <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
                     <div class="flex-shrink-0">
-                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-xs">
-                            [IMG]
-                        </div>
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">JP</div>
                     </div>
                     <div class="flex-grow">
                         <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
                             <h4 class="font-bold text-blue-900">Juan Pérez</h4>
                             <time class="text-xs text-gray-500">Hoy</time>
                         </div>
-                        <p class="leading-relaxed text-gray-600">Fusce elementum imperdiet velit, vel pellentesque purus pretium id. Vestibulum fringilla lacinia convallis. Cras tristique odio ante, viverra laoreet libero volutpat ac. Vivamus egestas facilisis aliquet. Cras malesuada finibus fermentum.</p>
+                        <p class="leading-relaxed text-gray-600">Fusce elementum imperdiet velit, vel pellentesque purus pretium id. Vestibulum fringilla lacinia convallis.</p>
                         <div class="flex gap-4 mt-4">
-                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700">
-                                <span class="text-sm material-symbols-outlined">thumb_up</span> 12
-                            </button>
-                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700">
-                                <span class="text-sm material-symbols-outlined">reply</span> Responder
-                            </button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">thumb_up</span> 8</button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">reply</span> Responder</button>
                         </div>
                     </div>
                 </article>
+
+                <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
+                    <div class="flex-shrink-0">
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">MG</div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
+                            <h4 class="font-bold text-blue-900">María Gómez</h4>
+                            <time class="text-xs text-gray-500">Hoy</time>
+                        </div>
+                        <p class="leading-relaxed text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend ante eu nisi tempus.</p>
+                        <div class="flex gap-4 mt-4">
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">thumb_up</span> 5</button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">reply</span> Responder</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
+                    <div class="flex-shrink-0">
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">CS</div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
+                            <h4 class="font-bold text-blue-900">Carlos Silva</h4>
+                            <time class="text-xs text-gray-500">Ayer</time>
+                        </div>
+                        <p class="leading-relaxed text-gray-600">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <div class="flex gap-4 mt-4">
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">thumb_up</span> 3</button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">reply</span> Responder</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
+                    <div class="flex-shrink-0">
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">LR</div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
+                            <h4 class="font-bold text-blue-900">Laura Rojas</h4>
+                            <time class="text-xs text-gray-500">Ayer</time>
+                        </div>
+                        <p class="leading-relaxed text-gray-600">Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                        <div class="flex gap-4 mt-4">
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">thumb_up</span> 15</button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">reply</span> Responder</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
+                    <div class="flex-shrink-0">
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">PM</div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
+                            <h4 class="font-bold text-blue-900">Pedro Muñoz</h4>
+                            <time class="text-xs text-gray-500">Ayer</time>
+                        </div>
+                        <p class="leading-relaxed text-gray-600">Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna.</p>
+                        <div class="flex gap-4 mt-4">
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">thumb_up</span> 2</button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">reply</span> Responder</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
+                    <div class="flex-shrink-0">
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">AS</div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
+                            <h4 class="font-bold text-blue-900">Ana Soto</h4>
+                            <time class="text-xs text-gray-500">Ayer</time>
+                        </div>
+                        <p class="leading-relaxed text-gray-600">Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam.</p>
+                        <div class="flex gap-4 mt-4">
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">thumb_up</span> 7</button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">reply</span> Responder</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
+                    <div class="flex-shrink-0">
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">DV</div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
+                            <h4 class="font-bold text-blue-900">Diego Vega</h4>
+                            <time class="text-xs text-gray-500">Hace 2 días</time>
+                        </div>
+                        <p class="leading-relaxed text-gray-600">Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien.</p>
+                        <div class="flex gap-4 mt-4">
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">thumb_up</span> 1</button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">reply</span> Responder</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
+                    <div class="flex-shrink-0">
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">CC</div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
+                            <h4 class="font-bold text-blue-900">Camila Castro</h4>
+                            <time class="text-xs text-gray-500">Hace 2 días</time>
+                        </div>
+                        <p class="leading-relaxed text-gray-600">Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus.</p>
+                        <div class="flex gap-4 mt-4">
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">thumb_up</span> 4</button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">reply</span> Responder</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flex flex-col items-start gap-4 p-6 rounded-2xl border shadow-sm transition-shadow bg-white border-gray-200 hover:shadow-md md:flex-row">
+                    <div class="flex-shrink-0">
+                        <div class="flex justify-center items-center w-12 h-12 font-bold rounded-full bg-gray-200 text-gray-500 text-lg">FR</div>
+                    </div>
+                    <div class="flex-grow">
+                        <div class="flex flex-col justify-between mb-2 md:flex-row md:items-center">
+                            <h4 class="font-bold text-blue-900">Felipe Reyes</h4>
+                            <time class="text-xs text-gray-500">Hace 3 días</time>
+                        </div>
+                        <p class="leading-relaxed text-gray-600">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+                        <div class="flex gap-4 mt-4">
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">thumb_up</span> 9</button>
+                            <button class="flex items-center gap-1 text-xs transition-colors text-gray-500 hover:text-blue-700"><span class="text-sm material-symbols-outlined">reply</span> Responder</button>
+                        </div>
+                    </div>
+                </article>
+
                 <div class="py-8 text-center">
                     <button class="flex items-center gap-2 mx-auto font-bold transition-colors text-blue-900 hover:text-blue-500">
                         Cargar más comentarios <span class="material-symbols-outlined">expand_more</span>
                     </button>
                 </div>
-            </div> 
+            </div>
 
             <!-- Filtrador por temas populares -->
             <aside class="hidden space-y-6 lg:block lg:col-span-3">
